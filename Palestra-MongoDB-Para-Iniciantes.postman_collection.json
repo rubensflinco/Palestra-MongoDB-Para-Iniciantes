@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "ee2f4e15-0412-4f2a-96c2-11be5f87e4c7",
+		"name": "Palestra-MongoDB-Para-Iniciantes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2492536"
+	},
+	"item": [
+		{
+			"name": "Início",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlBase}}",
+					"host": [
+						"{{urlBase}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/buscar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "Content-Type",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":{\n\t\t\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{urlBase}}/api/buscar",
+					"host": [
+						"{{urlBase}}"
+					],
+					"path": [
+						"api",
+						"buscar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/criar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "Content-Type",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"json\":{\n\t\t\"url\":\"aaaaaa.com\",\n\t\t\"categoria\":\"test\",\n        \"test\": \"test2\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{urlBase}}/api/criar",
+					"host": [
+						"{{urlBase}}"
+					],
+					"path": [
+						"api",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "Content-Type",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":{\n\t\t\"_id\": \"671fb36cecd4930eed90934f\"\n\t},\n\t\"json\":{\n\t\t\"url\": \"bbbbb.com\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{urlBase}}/api/atualizar",
+					"host": [
+						"{{urlBase}}"
+					],
+					"path": [
+						"api",
+						"atualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/remover",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "Content-Type",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":{\n\t\t\"_id\": \"671fb36cecd4930eed90934f\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{urlBase}}/api/remover",
+					"host": [
+						"{{urlBase}}"
+					],
+					"path": [
+						"api",
+						"remover"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "urlBase",
+			"value": "http://localhost:4000"
+		}
+	]
+}
