@@ -1,0 +1,22 @@
+{
+  "name": "palestra-mongodb-para-inciantes",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rubens Flinco",
+    "email": "contato@rubensflinco.com.br",
+    "url": "https://rubensflinco.com.br"
+  },
+  "scripts": {
+    "start": "node app-server.js",
+    "build": "npm install"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "express": "~4.16.1",
+    "mongoose": "^8.7.3",
+    "morgan": "~1.9.1",
+    "nodemon": "^1.19.2"
+  }
+}
